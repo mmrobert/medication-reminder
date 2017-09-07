@@ -3,6 +3,8 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'medication-reminder' do
-    pod 'Alamofire', '~> 4.0.1'
+    pod 'Moya/RxSwift'
+    pod 'RxCocoa'
+    pod 'Marshal'
     pod 'SwiftyJSON', '~> 3.1.1'
 end

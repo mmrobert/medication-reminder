@@ -13,6 +13,8 @@
 		5B485DE51E7C753D0013B925 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B485DE31E7C753D0013B925 /* Main.storyboard */; };
 		5B485DE71E7C753D0013B925 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B485DE61E7C753D0013B925 /* Assets.xcassets */; };
 		5B485DEA1E7C753D0013B925 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B485DE81E7C753D0013B925 /* LaunchScreen.storyboard */; };
+		9B948ABD1F61D42E0055258D /* MedAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B948ABC1F61D42E0055258D /* MedAPI.swift */; };
+		9B948AC11F61D4830055258D /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B948AC01F61D4830055258D /* NetworkProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		5B485DE61E7C753D0013B925 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B485DE91E7C753D0013B925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B485DEB1E7C753D0013B925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B948ABC1F61D42E0055258D /* MedAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedAPI.swift; sourceTree = "<group>"; };
+		9B948AC01F61D4830055258D /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		D99A76BCD6251483082C59DD /* Pods_medication_reminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_medication_reminder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C37ACF78442DAD71F24594 /* Pods-medication-reminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medication-reminder.release.xcconfig"; path = "Pods/Target Support Files/Pods-medication-reminder/Pods-medication-reminder.release.xcconfig"; sourceTree = "<group>"; };
 		FA4E7FE19B323FB4F24F169D /* Pods-medication-reminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medication-reminder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-medication-reminder/Pods-medication-reminder.debug.xcconfig"; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 				5B485DDF1E7C753D0013B925 /* AppDelegate.swift */,
 				5B485DE11E7C753D0013B925 /* ViewController.swift */,
 				5B485DE31E7C753D0013B925 /* Main.storyboard */,
+				9B948ABC1F61D42E0055258D /* MedAPI.swift */,
+				9B948AC01F61D4830055258D /* NetworkProvider.swift */,
 				5B485DE61E7C753D0013B925 /* Assets.xcassets */,
 				5B485DE81E7C753D0013B925 /* LaunchScreen.storyboard */,
 				5B485DEB1E7C753D0013B925 /* Info.plist */,
@@ -212,7 +218,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B485DE21E7C753D0013B925 /* ViewController.swift in Sources */,
+				9B948AC11F61D4830055258D /* NetworkProvider.swift in Sources */,
 				5B485DE01E7C753D0013B925 /* AppDelegate.swift in Sources */,
+				9B948ABD1F61D42E0055258D /* MedAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +384,7 @@
 				5B485DF01E7C753D0013B925 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
