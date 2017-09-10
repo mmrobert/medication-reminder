@@ -6,5 +6,4 @@ target 'medication-reminder' do
     pod 'Moya/RxSwift'
     pod 'RxCocoa'
     pod 'Marshal'
-    pod 'SwiftyJSON', '~> 3.1.1'
 end

@@ -13,30 +13,30 @@ import Moya
 
 public enum MedAPI {
     case index
-    case show
+    case show(id: String)
     case create
-    case update
-    case destroy
+    case update(id: String)
+    case destroy(id: String)
 }
 
 extension MedAPI: TargetType {
     
     public var baseURL: URL {
-        return URL(string: "localhost:9000")!
+        return URL(string: "http://localhost:9000/api/medications")!
     }
     
     public var path: String {
         switch self {
         case .index:
             return ""
-        case .show:
-            return "/id"
+        case .show(let id):
+            return "/\(id)"
         case .create:
             return ""
-        case .update:
-            return "/id"
-        case .destroy:
-            return "/id"
+        case .update(let id):
+            return "/\(id)"
+        case .destroy(let id):
+            return "/\(id)"
         }
     }
     

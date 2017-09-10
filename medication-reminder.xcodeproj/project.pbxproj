@@ -13,8 +13,17 @@
 		5B485DE51E7C753D0013B925 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B485DE31E7C753D0013B925 /* Main.storyboard */; };
 		5B485DE71E7C753D0013B925 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B485DE61E7C753D0013B925 /* Assets.xcassets */; };
 		5B485DEA1E7C753D0013B925 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B485DE81E7C753D0013B925 /* LaunchScreen.storyboard */; };
+		9B1661461F621C0500C79754 /* MedDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1661451F621C0500C79754 /* MedDataModel.swift */; };
+		9B2C37691F623F3500F83077 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2C37681F623F3500F83077 /* CalendarView.swift */; };
+		9B2C376B1F623FD000F83077 /* CalendarDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2C376A1F623FD000F83077 /* CalendarDayCell.swift */; };
+		9B2C376D1F62403100F83077 /* CalendarFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2C376C1F62403100F83077 /* CalendarFlowLayout.swift */; };
+		9B2C376F1F6240B300F83077 /* CalendarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2C376E1F6240B300F83077 /* CalendarHeaderView.swift */; };
+		9B2C37711F6241D200F83077 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2C37701F6241D200F83077 /* Utilities.swift */; };
+		9B2C37731F629FDC00F83077 /* MedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2C37721F629FDC00F83077 /* MedTableViewCell.swift */; };
+		9B70CAB01F634A11003F0571 /* beep-8.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9B70CAAF1F634A11003F0571 /* beep-8.wav */; };
+		9B70CAB21F634C58003F0571 /* chime_bell_ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9B70CAB11F634C58003F0571 /* chime_bell_ding.wav */; };
+		9B70CAB41F6579E8003F0571 /* SingletonObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B70CAB31F6579E8003F0571 /* SingletonObjects.swift */; };
 		9B948ABD1F61D42E0055258D /* MedAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B948ABC1F61D42E0055258D /* MedAPI.swift */; };
-		9B948AC11F61D4830055258D /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B948AC01F61D4830055258D /* NetworkProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +34,17 @@
 		5B485DE61E7C753D0013B925 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B485DE91E7C753D0013B925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B485DEB1E7C753D0013B925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B1661451F621C0500C79754 /* MedDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedDataModel.swift; sourceTree = "<group>"; };
+		9B2C37681F623F3500F83077 /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		9B2C376A1F623FD000F83077 /* CalendarDayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDayCell.swift; sourceTree = "<group>"; };
+		9B2C376C1F62403100F83077 /* CalendarFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarFlowLayout.swift; sourceTree = "<group>"; };
+		9B2C376E1F6240B300F83077 /* CalendarHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarHeaderView.swift; sourceTree = "<group>"; };
+		9B2C37701F6241D200F83077 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		9B2C37721F629FDC00F83077 /* MedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedTableViewCell.swift; sourceTree = "<group>"; };
+		9B70CAAF1F634A11003F0571 /* beep-8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "beep-8.wav"; sourceTree = "<group>"; };
+		9B70CAB11F634C58003F0571 /* chime_bell_ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chime_bell_ding.wav; sourceTree = "<group>"; };
+		9B70CAB31F6579E8003F0571 /* SingletonObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonObjects.swift; sourceTree = "<group>"; };
 		9B948ABC1F61D42E0055258D /* MedAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedAPI.swift; sourceTree = "<group>"; };
-		9B948AC01F61D4830055258D /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		D99A76BCD6251483082C59DD /* Pods_medication_reminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_medication_reminder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C37ACF78442DAD71F24594 /* Pods-medication-reminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medication-reminder.release.xcconfig"; path = "Pods/Target Support Files/Pods-medication-reminder/Pods-medication-reminder.release.xcconfig"; sourceTree = "<group>"; };
 		FA4E7FE19B323FB4F24F169D /* Pods-medication-reminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medication-reminder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-medication-reminder/Pods-medication-reminder.debug.xcconfig"; sourceTree = "<group>"; };
@@ -67,12 +85,18 @@
 			children = (
 				5B485DDF1E7C753D0013B925 /* AppDelegate.swift */,
 				5B485DE11E7C753D0013B925 /* ViewController.swift */,
+				9B2C37721F629FDC00F83077 /* MedTableViewCell.swift */,
 				5B485DE31E7C753D0013B925 /* Main.storyboard */,
 				9B948ABC1F61D42E0055258D /* MedAPI.swift */,
-				9B948AC01F61D4830055258D /* NetworkProvider.swift */,
+				9B1661451F621C0500C79754 /* MedDataModel.swift */,
+				9B2C37701F6241D200F83077 /* Utilities.swift */,
+				9B70CAB31F6579E8003F0571 /* SingletonObjects.swift */,
+				9B2C37671F623EC700F83077 /* BRCCalendar */,
 				5B485DE61E7C753D0013B925 /* Assets.xcassets */,
 				5B485DE81E7C753D0013B925 /* LaunchScreen.storyboard */,
 				5B485DEB1E7C753D0013B925 /* Info.plist */,
+				9B70CAAF1F634A11003F0571 /* beep-8.wav */,
+				9B70CAB11F634C58003F0571 /* chime_bell_ding.wav */,
 			);
 			path = "medication-reminder";
 			sourceTree = "<group>";
@@ -92,6 +116,17 @@
 				D99A76BCD6251483082C59DD /* Pods_medication_reminder.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B2C37671F623EC700F83077 /* BRCCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				9B2C37681F623F3500F83077 /* CalendarView.swift */,
+				9B2C376A1F623FD000F83077 /* CalendarDayCell.swift */,
+				9B2C376C1F62403100F83077 /* CalendarFlowLayout.swift */,
+				9B2C376E1F6240B300F83077 /* CalendarHeaderView.swift */,
+			);
+			name = BRCCalendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,8 +192,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B485DEA1E7C753D0013B925 /* LaunchScreen.storyboard in Resources */,
+				9B70CAB21F634C58003F0571 /* chime_bell_ding.wav in Resources */,
 				5B485DE71E7C753D0013B925 /* Assets.xcassets in Resources */,
 				5B485DE51E7C753D0013B925 /* Main.storyboard in Resources */,
+				9B70CAB01F634A11003F0571 /* beep-8.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,9 +254,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B2C376B1F623FD000F83077 /* CalendarDayCell.swift in Sources */,
 				5B485DE21E7C753D0013B925 /* ViewController.swift in Sources */,
-				9B948AC11F61D4830055258D /* NetworkProvider.swift in Sources */,
+				9B2C376D1F62403100F83077 /* CalendarFlowLayout.swift in Sources */,
+				9B2C37691F623F3500F83077 /* CalendarView.swift in Sources */,
+				9B1661461F621C0500C79754 /* MedDataModel.swift in Sources */,
+				9B70CAB41F6579E8003F0571 /* SingletonObjects.swift in Sources */,
 				5B485DE01E7C753D0013B925 /* AppDelegate.swift in Sources */,
+				9B2C376F1F6240B300F83077 /* CalendarHeaderView.swift in Sources */,
+				9B2C37731F629FDC00F83077 /* MedTableViewCell.swift in Sources */,
+				9B2C37711F6241D200F83077 /* Utilities.swift in Sources */,
 				9B948ABD1F61D42E0055258D /* MedAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
