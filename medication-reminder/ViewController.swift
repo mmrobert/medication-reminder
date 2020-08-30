@@ -13,7 +13,7 @@ import Moya
 import RxSwift
 import UserNotifications
 
-class ViewController: UIViewController, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDataSource, UISearchBarDelegate {
     
     @IBOutlet weak var calendarView: CalendarView!
     @IBOutlet weak var medTableView: UITableView!
@@ -28,6 +28,8 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     fileprivate let dateFormatString = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
     fileprivate let dateFormatter = DateFormatter()
+    
+    lazy var searBar: UISearchBar = UISearchBar(frame: CGRect(x: 0, y: 0, width: 200, height: 20))
     
     public let selectedDay: Date = Date()
     
@@ -44,6 +46,12 @@ class ViewController: UIViewController, UITableViewDataSource {
         self.view.sendSubview(toBack: self.activityIndicatorBack)
         
         center.delegate = self
+        
+        self.searBar.showsCancelButton = false
+        self.searBar.delegate = self
+        self.searBar.placeholder = "Listing ID"
+        let leftBtn = UIBarButtonItem(customView: self.searBar)
+        self.navigationItem.leftBarButtonItem = leftBtn
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -54,6 +62,20 @@ class ViewController: UIViewController, UITableViewDataSource {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        let storyB = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyB.instantiateViewController(withIdentifier: "newViewCC")
+        if (self.responds(to: #selector(self.show(_:sender:)))) {
+            self.show(controller, sender: self)
+        } else {
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        print("sear click--")
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -129,6 +151,7 @@ class ViewController: UIViewController, UITableViewDataSource {
             self.view.sendSubview(toBack: self.activityIndicatorBack)
             switch event {
             case .next(let response):
+                
                 do {
                     if let jsonArray = try response.mapJSON() as? Array<Any> {
                         if jsonArray.count > 0 {
@@ -388,8 +411,9 @@ extension ViewController: UNUserNotificationCenterDelegate {
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         completionHandler([.sound])
+        let titleStr = notification.request.content.title
         let bodyStr = notification.request.content.body
-        self.presentAlert(aTitle: "Time for medicine!", withMsg: bodyStr, confirmTitle: "OK")
+        self.presentAlert(aTitle: titleStr, withMsg: bodyStr, confirmTitle: "OK")
         self.medTableView.reloadData()
     }
     

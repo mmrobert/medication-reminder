@@ -44,4 +44,29 @@ class Utilities: NSObject {
             AudioServicesPlaySystemSound(soundId)
         }
     }
+    
+// the following to group messages for the same user
+    typealias User = String
+    
+    struct Message {
+        let user: User
+        let text: String
+    }
+    
+    func groupByUser(_ messages: [Message]) -> [[Message]] {
+        guard let firstMessage = messages.first, messages.count > 1 else {
+            return [messages]
+        }
+        
+        let sameUserTest: (Message) -> Bool = {
+            $0.user == firstMessage.user
+        }
+        let firstGroup = Array(messages.prefix(while: sameUserTest))
+        let rest = Array(messages.drop(while: sameUserTest))
+        
+        return [Array(firstGroup)] + groupByUser(Array(rest))
+    }
+// the above to group the messages for the same user
+// the return is [[]], inside is array for each user
+    
 }
